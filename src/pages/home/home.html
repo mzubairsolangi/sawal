@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Sawal</ion-title>
+    <ion-title>Welcome</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -8,9 +8,6 @@
 <ion-content padding>
 
   <ion-row>
-    <!--<ion-col col-12 text-center>-->
-      <!--<img src="assets/imgs/logo.png"  width="100px" text-center alt="Logo">-->
-    <!--</ion-col>-->
 
     <!-- user identity section -->
     <ion-col col-12>
@@ -21,7 +18,7 @@
       </h4>
 
       <!-- user found already-->
-      <h4 class="welcome-section" *ngIf="!fetching && userName">Welcome, <strong>{{userName}}</strong> !</h4>
+      <h4 class="welcome-section" *ngIf="!fetching && userName"><strong>{{userName}}</strong> !</h4>
 
       <!-- if new user - register first -->
       <div *ngIf="!fetching && !userName" class="register-section">
@@ -99,6 +96,15 @@
         </ion-row>
       </form>
 
+    </ion-col>
+
+    <!-- app banner - app logo and description -->
+    <ion-col class="app-banner" col-12 text-center>
+      <hr>
+      <img src="assets/imgs/logo.png" width="100px" text-center alt="Logo">
+
+      <h4>Sawal</h4>
+      <p>Brought to you by Uqaab - A non-profit organisation.</p>
     </ion-col>
 
   </ion-row>
